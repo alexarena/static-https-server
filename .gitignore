@@ -4,4 +4,6 @@ certs/ca.key
 certs/server.crt
 certs/server.csr
 certs/server.key
+certs/.DS_Store
 node_modules
+.DS_Store

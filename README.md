@@ -24,4 +24,6 @@ You can specify the port for the server to listen on by passing an argument like
 The static file server code was inspired heavily by [this StackOverflow answer](https://stackoverflow.com/a/29046869)
 and I used [this guide](https://matoski.com/article/node-express-generate-ssl/) to walk through adding SSL.
 
-**Disclaimer:** Don't use this for anything other than local development, *obviously*.
+**Disclaimer:**
+
+Don't use this for anything other than local development, *obviously*.
