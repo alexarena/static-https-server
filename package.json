@@ -1,7 +1,7 @@
 {
-  "name": "simple-https-server",
+  "name": "static-https-server",
   "version": "1.0.0",
-  "description": "",
+  "description": "A zero-conf development server to static files over HTTPS",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,6 +11,6 @@
     "static-https-server": "bin/static-https-server"
   },
   "preferGlobal": true,
-  "author": "",
-  "license": "ISC"
+  "author": "Alex Arena",
+  "license": "MIT"
 }
