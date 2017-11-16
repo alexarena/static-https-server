@@ -1,2 +1,7 @@
-certs
+certs/ca.crt
+certs/ca.csr
+certs/ca.key
+certs/server.crt
+certs/server.csr
+certs/server.key
 node_modules
