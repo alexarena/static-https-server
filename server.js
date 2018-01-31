@@ -69,7 +69,7 @@ const server = async (req,res) => {
 async function run(){
 
   let dir = await cmd('npm root -g')
-  dir = dir.trim() + '/simple-https-server/certs'
+  dir = dir.trim() + '/static-https-server/certs'
 
   let key,cert,ca = null
   let genCerts = false
