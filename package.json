@@ -1,6 +1,6 @@
 {
   "name": "static-https-server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A zero-conf development server to static files over HTTPS",
   "main": "server.js",
   "scripts": {
