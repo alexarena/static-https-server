@@ -15,7 +15,7 @@ function cmd(command) {
 
 function exists(pathname) {
   return new Promise((resolve, reject) => {
-    fs.exists(pathname, exist => {
+    fs.exists(pathname, (exist) => {
       resolve(exist);
     });
   });
@@ -49,7 +49,7 @@ const server = async (req, res) => {
     ".mp3": "audio/mpeg",
     ".svg": "image/svg+xml",
     ".pdf": "application/pdf",
-    ".doc": "application/msword"
+    ".doc": "application/msword",
   };
 
   const doesExist = await exists(pathname);
@@ -73,8 +73,8 @@ const server = async (req, res) => {
 };
 
 async function run() {
-  let dir = await cmd("npm root -g");
-  dir = dir.trim() + "/static-https-server/certs";
+  let dir = __dirname;
+  dir = dir.trim() + "/certs";
 
   let key,
     cert,
@@ -120,7 +120,7 @@ async function run() {
     cert: cert || fs.readFileSync(`${dir}/server.crt`),
     ca: ca || fs.readFileSync(`${dir}/ca.crt`),
     requestCert: false,
-    rejectUnauthorized: false
+    rejectUnauthorized: false,
   };
 
   https.createServer(opts, server).listen(port);
